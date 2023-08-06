@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drum Kit</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="base">
+      <div class="head">The Drum Kit</div>
+      <div class="material">
+        <div class="bgi">
+          <img src="images/two.png" alt="" />
+        </div>
+        <div class="content">
+          <div class="layer1">
+            <div class="box">
+              <button class="drum" onclick="a()" id="a">
+                <div class="a image"><img src="images/crash.jpg" alt="" /></div>
+                <div class="text">Crash Cymble [A]</div>
+              </button>
+            </div>
+            <div class="box">
+              <button class="drum" onclick="s()" id="s">
+                <div class="image">
+                  <img src="images/mediumtom.jpeg" alt="" />
+                </div>
+                <div class="text">HI-Tom [S]</div>
+              </button>
+            </div>
+            <div class="box">
+              <button class="drum" onclick="d()" id="d">
+                <div class="image">
+                  <img src="images/mediumtom.jpeg" alt="" />
+                </div>
+                <div class="text">Medium Tom [D]</div>
+              </button>
+            </div>
+          </div>
+          <div class="layer2">
+            <div class="box">
+              <button class="drum" onclick="j()" id="j">
+                <div class="image">
+                  <img src="images/snare.jpeg" alt="" />
+                </div>
+                <div class="text">Snare [J]</div>
+              </button>
+            </div>
+            <div class="box">
+              <button class="drum" onclick="k()" id="k">
+                <div class="image"><img src="images/kick.jpeg" alt="" /></div>
+                <div class="text">BASS[K]</div>
+              </button>
+            </div>
+            <div class="box">
+              <button class="drum" onclick="l()" id="l">
+                <div class="image">
+                  <img src="images/floortom.jpeg" alt="" />
+                </div>
+                <div class="text">Floor Tom [L]</div>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="bgt">
+          <div>FEEL</div>
+          <div>THE</div>
+          <div>BEAT</div>
+          <button id="btn"  onkeypress="myKeyPress(event)">
+            Enable Keyboard
+          </button>
+        </div>
+      </div>
+      <div class="footer">
+        <div>Developed by Abhishek Yadav | April 2023</div>
+        <div>
+          For any querry please mail @
+          <a href="mailto: 21abhishek.ay@gmail.com">21abhishek.ay@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="main.js"></script>
+</html>

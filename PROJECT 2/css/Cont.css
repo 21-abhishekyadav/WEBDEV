@@ -1,0 +1,248 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+/* navbar */
+.navbar {
+    position: sticky;
+    top: 12px;
+    background-color: #c70039;
+  }
+  .btn {
+    display: none;
+    width: 30px;
+    margin-left: 10px;
+  }
+  
+  .btn img {
+    width: 100%;
+  }
+  .dropmenu {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .navitem {
+    margin: 5px 12px;
+    padding: 15px 15px 15px 15px;
+  }
+  .navitem a {
+    text-decoration: none;
+    color: white;
+    font-family: "Quicksand", sans-serif;
+    padding-right: 3px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  .navitem a:hover {
+    color: black;
+  }
+
+
+  .exmenu{
+    margin-top: 10px;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+  .exitem {
+    padding:10px;
+  }
+  
+
+  #explore:hover .exmenu{
+    display: flex;
+  }
+
+
+
+
+/* container */
+
+.container {
+  display: grid;
+  grid-gap: 0rem;
+  grid-template-areas:
+    "navbar navbar navbar"
+    "sector sector sector"
+    "footer footer footer";
+}
+
+.items {
+  background-color: white;
+}
+
+#nav {
+  display: none;
+  margin-top: 10px;
+  border: 2px solid black;
+  grid-area: navbar;
+  background-color: black;
+
+  height: 50px;
+}
+
+#sector {
+  grid-area: sector;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+#footer {
+
+
+  grid-area: footer;
+  background-color: rgb(71, 70, 70);
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  font-family: "Quicksand", sans-serif;
+  padding: 30px;
+ 
+}
+
+#footer a{
+  text-decoration: none;
+  color: #4692d5;
+}
+
+.contact {
+    margin-bottom: 10%;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+
+}
+.box {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+}
+.img {
+  width: 30%;
+}
+
+.img img {
+  width: 80%;
+  margin-left: 60px;
+}
+
+.text {
+  width: 70%;
+
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-self: center;
+  margin-bottom: 30px;
+}
+.text h2 {
+  margin-top: 20px;
+  font-size: 1.6em;
+}
+.text h3 {
+  font-size: 1rem;
+}
+.line {
+  width: 60%;
+}
+
+.highlight {
+    padding:3%;
+  width: 94%;
+  margin-top: 10px;
+  background: linear-gradient(
+    to right,
+    rgba(174, 188, 191, 0.5) 0%,
+    rgba(110, 119, 116, 0.5) 50%,
+    rgba(10, 14, 10, 0.5) 51%,
+    rgba(10, 8, 9, 0.5) 100%
+  );
+
+  align-self: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .img {
+    width: 30%;
+    align-self: center;
+    margin: 0%;
+  }
+  .img img {
+    margin: 0px;
+  }
+  .text ul {
+    align-content: center;
+    align-self: center;
+  }
+  .text h2 {
+    align-self: center;
+  }
+  .text hr {
+    align-self: center;
+  }
+
+
+
+
+
+  .btn {
+    display: block;
+  }
+  .dropmenu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+  .navitem {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .navitem:hover {
+    background-color: black;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .navitem a:hover {
+    color: #fff;
+  }
+
+  .button:hover .dropmenu {
+    display: flex;
+  }
+
+  .navitem {
+    margin-left: 10px;
+    padding: 2px;
+  }
+  .navitem a {
+    font-size: small;
+    padding-right: 3px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+
+  .box{
+    margin-top: 20px;
+  }
+
+
+  
+ 
+}

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Handjet:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="base">
+      <div class="head">THE WEEK PLANNER</div>
+
+      <div class="material">
+        <div class="content">
+          <div class="value">
+            <div class="nav">
+              <button class="button" onclick="myFunction(1)" ;>SUNDAY</button>
+              <button class="button" onclick="myFunction(2)" ;>MONDAY</button>
+              <button class="button" onclick="myFunction(3)" ;>TUESDAY</button>
+              <button class="button" onclick="myFunction(4)" ;>
+                WEDNESDAY
+              </button>
+              <button class="button" onclick="myFunction(5)" ;>THURSDAY</button>
+              <button class="button" onclick="myFunction(6)" ;>FRIDAY</button>
+              <button class="button" onclick="myFunction(7)" ;>SATURDAY</button>
+            </div>
+
+            <div class="boxes" id="container1">
+              <div class="input">
+                <input
+                  type="text"
+                  placeholder="Enter your task here"
+                  id="input1"
+                />
+                <div class="button" onclick="getVal('input1','div1')">ADD</div>
+              </div>
+
+              <div id="div1">
+                <p>SUNDAY HUSTLES</p>
+              </div>
+            </div>
+
+            <div class="boxes" id="container2">
+              <div class="input">
+                <input
+                  type="text"
+                  placeholder="Enter your task here"
+                  id="input2"
+                />
+                <div class="button" onclick="getVal('input2','div2')">ADD</div>
+              </div>
+              <div id="div2">
+                <p>THE MONDAY</p>
+              </div>
+            </div>
+
+            <div class="boxes" id="container3">
+              <div class="input">
+                <input
+                  type="text"
+                  placeholder="Enter your task here"
+                  id="input3"
+                />
+                <div class="button" onclick="getVal('input3','div3')">ADD</div>
+              </div>
+              <div id="div3">
+                <p>TUESDAY MOODS</p>
+              </div>
+            </div>
+
+            <div class="boxes" id="container4">
+              <div class="input">
+                <input
+                  type="text"
+                  placeholder="Enter your task here"
+                  id="input4"
+                />
+                <div class="button" onclick="getVal('input4','div4')">ADD</div>
+              </div>
+              <div id="div4">
+                <p>WEDNESDAY</p>
+              </div>
+            </div>
+
+            <div class="boxes" id="container5">
+              <div class="input">
+                <input
+                  type="text"
+                  placeholder="Enter your task here"
+                  id="input5"
+                />
+                <div class="button" onclick="getVal('input5','div5')">ADD</div>
+              </div>
+              <div id="div5">
+                <p>THURSDAY'S THRUST</p>
+              </div>
+            </div>
+
+            <div class="boxes" id="container6">
+              <div class="input">
+                <input
+                  type="text"
+                  placeholder="Enter your task here"
+                  id="input6"
+                />
+                <div class="button" onclick="getVal('input6','div6')">ADD</div>
+              </div>
+              <div id="div6">
+                <p>FURIOUS FRIDAY</p>
+              </div>
+            </div>
+
+            <div class="boxes" id="container7">
+              <div class="input">
+                <input
+                  type="text"
+                  placeholder="Enter your task here"
+                  id="input7"
+                />
+                <div class="button" onclick="getVal('input7','div7')">ADD</div>
+              </div>
+              <div id="div7">
+                <p>NEVER ENDING SATURDAY</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rate">
+          <div class="rating">
+            <button class="button" onclick="eval()">Evaluate</button>
+          <div class="star">
+            <div class="im" id="star1"><img src="images/star.png" alt="" /></div>
+            <div class="im" id="star2"><img src="images/star.png" alt="" /></div>
+            <div class="im" id="star3"><img src="images/star.png" alt="" /></div>
+            <div class="im" id="star4"><img src="images/star.png" alt="" /></div>
+            <div class="im" id="star1"><img src="images/star.png" alt="" /></div>
+          </div>
+
+          </div>
+          <p>Evaluate your weekly performance once you have perfomed some task !</p>
+          
+        </div>
+  
+        <div class="footer">
+          <div>Developed by Abhishek Yadav | April 2023</div>
+          <div>
+            For any querry please mail @
+            <a href="mailto: 21abhishek.ay@gmail.com">21abhishek.ay@gmail.com</a>
+          </div>
+        </div>
+
+      </div>
+
+      
+    </div>
+  </body>
+<script src="main.js"></script>
+</html>

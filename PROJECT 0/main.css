@@ -1,0 +1,105 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.base {
+  border: 2px solid;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+.footer {
+  background-color: rgb(171, 170, 170);
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 1rem;
+  padding: 1%;
+  font-weight: bolder;
+}
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.head {
+  padding: 3rem;
+  align-content: center;
+  align-self: center;
+  color: #fff;
+  font-family: "Poppins";
+  font-size: 3rem;
+}
+.material {
+  border: 2px solid;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.bgi {
+  width: 30%;
+}
+.bgi img {
+  width: 95%;
+}
+
+.bgt {
+  font-size: 4rem;
+  color: rgb(171, 170, 170);
+  padding-left: 4%;
+  font-family: sans-serif;
+}
+.content {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 3%;
+  padding: 1%;
+}
+.layer1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.box {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2%;
+}
+.drum {
+  border: none;
+  background: none;
+}
+
+.image img {
+  width: 100%;
+}
+
+.text {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-size: medium;
+  align-self: center;
+  background-color: rgb(171, 170, 170);
+  text-align: center;
+  border-radius: 3%;
+}
+.layer2 {
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+
+.Animation{
+  animation: fadeIn .5s;
+
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
