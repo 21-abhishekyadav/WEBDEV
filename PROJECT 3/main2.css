@@ -1,0 +1,160 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    
+}
+
+
+#navbar{
+    grid-area: navbar;
+}
+#container1{
+    grid-area: container1;
+}
+#container2{
+    grid-area: container2;
+}
+#container3{
+    grid-area: container3;
+}
+#container4{
+    grid-area: container4;
+}
+#form{
+    grid-area: form;
+}
+
+@media screen and (min-width: 1000px){
+    .content{
+        display: grid;
+        grid-gap: 0rem;
+        grid-template-areas: 
+        'navbar navbar navbar'
+        'container1 container1 form'
+        'container2 container2 form'
+        'container3 container3 form'
+        'container4 container4 form';
+        grid-template-columns: 35% 35% 30%;
+    
+}
+
+}
+	
+	
+
+
+.font{
+    font-family: cursive;
+    text-align: left;
+}
+
+.font2{
+    font-family: 'Lato';
+}
+
+.visit{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.cont{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+
+.scroll p{
+font-family: Arial, Helvetica, sans-serif;
+ border-right: solid 3px blue;
+ white-space: nowrap;
+  overflow: hidden;     
+    color: blue;
+    animation: animated-text 3s steps(20,end) 0s infinite normal both,
+             animated-cursor 600ms steps(20,end) infinite;
+}
+@keyframes animated-text{
+    0% {width: 0;}
+    33% {width: 400px;}
+    66% {width: 400px;}
+    100%{ width: 0px;}
+  }
+
+  @media screen and (max-width: 768px){
+
+    @keyframes animated-text{
+        0% {width: 0;}
+        33% {width: 200px;}
+        66% {width: 200px;}
+        100%{ width: 0px;}
+      }
+
+  }
+
+  @keyframes animated-cursor{
+    from{border-right-color: blue;}
+    to{border-right-color: transparent;}
+  }
+
+
+  .container {
+	display: flex;
+	width: 100%;
+}
+
+.panel {
+	background-size: auto 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 50px;
+	color: #fff;
+	flex: 0.5;
+	cursor: pointer;
+	height: 50vh;
+	position: relative;
+	margin: 10px;
+	transition: flex 0.7s cubic-bezier(0.05, 0.6, 0.4, 0.9);
+}
+
+.panel h3 {
+	font-size: 24px;
+	opacity: 0;
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	margin: 0;
+	transition: opacity 0s ease-in 0s;
+}
+
+.panel.active {
+	flex: 3;
+}
+
+.panel.active h3 {
+	opacity: 1;
+	transition: opacity 0.3s ease-in 0.4s;
+}
+
+
+@media screen and (max-width: 480px) {
+	.container {
+		width: 100%;
+	}
+    .panel{
+        margin: 3px;
+        border-radius: 10px;
+    }
+    .panel h3{
+        font-size: 12px;
+    }
+	
+}
+
+@media screen and (max-width: 480px) {
+
+	.social-panel-container.visible {
+		transform: translateX(0px);
+	}
+	
+	.floating-btn {
+		right: 10px;
+	}
+}
