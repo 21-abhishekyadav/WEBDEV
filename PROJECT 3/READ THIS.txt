@@ -1,0 +1,4 @@
+use npm init
+to download node modules for the project
+
+to work with tw css use vite server 
